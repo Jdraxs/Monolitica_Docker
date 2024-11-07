@@ -31,14 +31,9 @@ jobs:
             # Si no es un repositorio Git, clonamos el repositorio
             git clone https://github.com/Jdraxs/monolitica_docker.git /home/ubuntu/sosa-abarka_monolitica;
           fi
-	    
-	  cd /home/ubuntu/sosa-abarka_monolitica && 
-	  
+          cd /home/ubuntu/sosa-abarka_monolitica && 
 	  git checkout main &&
 	  git fetch --all &&
-	  git reset --hard origin/main &&
-	  git pull origin main &&
-	  
-          docker compose build &&
-          docker compose up -d
+	  docker compose build &&
+	  docker compose up -d
           '
