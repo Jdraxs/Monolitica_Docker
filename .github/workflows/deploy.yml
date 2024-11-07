@@ -32,7 +32,7 @@ jobs:
             git clone https://github.com/Jdraxs/monolitica_docker.git /home/ubuntu/sosa-abarka_monolitica;
           fi
 	    
-	  cd /home/ubuntu/prod-to-do-list && 
+	  cd /home/ubuntu/sosa-abarka_monolitica && 
 	  
 	  git checkout main &&
 	  git fetch --all &&
